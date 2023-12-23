@@ -1,0 +1,47 @@
+a{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-decoration: none;
+    color: lightgreen;
+}
+/* tag a merupakan inline yang tinggi dan lebarnya tidak dapat di ubah, namun ketika diberi inline-block tag a dapat diubah tinggi dan lebarnya  */
+img{
+    width: 200px;
+    height: 200px;
+}
+/* img termasuk inline namun dapat diubah */
+.header{
+    background-color: lightgreen;
+}
+.navigation{
+    background-color: pink;
+}
+.main{
+    background-color: lightgreen;
+}
+.main h3{
+    background-color: red;
+}
+/* block */
+h4{
+    display: none;
+}
+/* none digunakan untuk menghilangkan elemen */
+
+.navigation2 li{
+    display: inline;
+    background-color: blue;
+}
+/* contoh dari block diubah ke inline */
+
+
+
+
+
+
+
+
+
+

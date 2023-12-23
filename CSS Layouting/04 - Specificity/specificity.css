@@ -1,0 +1,25 @@
+#lorem {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+/* id lebih specifik */
+
+ul#sarapan li {
+    color: red;
+}
+
+.favorit {
+    color: green;
+}
+
+/* specificity red lebih berat */
+
+ul#sarapan li.favorit {
+    color: green;
+}
+
+/* solusi agar ayam bakar berwarna hijau */

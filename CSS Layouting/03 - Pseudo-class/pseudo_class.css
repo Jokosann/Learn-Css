@@ -1,0 +1,47 @@
+.hello:link {
+    color: purple;
+    font-size: 20px;
+}
+.hello:hover {
+    font-size: 30px;
+    color: brown;
+}
+
+.hello:active {
+    font-style: italic;
+}
+
+.hello:visited {
+    color: pink;
+}
+
+/* pseudo class link */
+
+li:nth-child(odd) a {
+    color: green;
+}
+
+li:nth-child(odd) a:hover {
+    font-size: 30px;
+}
+
+li:nth-child(even) a {
+    color: red;
+}
+
+li:nth-child(even) a:hover {
+    font-size: 30px;
+}
+
+/* pseudo class posisi elemen (first-child, last, nth (2)(2n)(2n+1)(even(genap),add(ganjil) */
+
+p:first-of-type {
+    color: red;
+}
+
+p:last-of-type {
+    color: green;
+}
+
+/* pseudo class elemen yang tidak beranak */
+

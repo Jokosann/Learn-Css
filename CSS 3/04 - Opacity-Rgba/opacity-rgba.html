@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>opacity-rgba</title>
+		<style>
+			.satu {
+				background-color: #f60;
+				width: 300px;
+				height: 300px;
+				opacity: 0.5;
+				position: relative;
+			}
+			.dua {
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				position: absolute;
+				right: -70px;
+				bottom: -70px;
+				/* opacity chield dari parent, jika parent opacity ny 0.5 maka jika child diberi o.5 juga maka opacity sebenarnya adalah 0.25 */
+				opacity: 0.5;
+			}
+
+			/* jika ingin hanya parent nya saja yang ingin diberi opacity maka bisa gunakan rgba()  */
+			.tiga {
+				background-color: rgba(255, 102, 0, 0.5);
+				width: 300px;
+				height: 300px;
+				margin-top: 130px;
+				margin-bottom: 200px;
+				position: relative;
+			}
+			.empat {
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				position: absolute;
+				right: -70px;
+				bottom: -70px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="satu">
+			<div class="dua"></div>
+		</div>
+		<div class="tiga">
+			<div class="empat"></div>
+		</div>
+	</body>
+</html>
+<!-- note : opacity itu untuk elemen, rgba() untuk warna -->

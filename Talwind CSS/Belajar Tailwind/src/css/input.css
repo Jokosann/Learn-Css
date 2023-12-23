@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		/* font-size: 6rem; */
+		/* color: theme(colors.test); */
+		@apply text-8xl text-test;
+	}
+}
+
+@layer utilities {
+	#check:checked ~ label div.toggle-dark {
+		@apply translate-x-3;
+	}
+}
+
+@layer components {
+	.grid-card {
+		@apply aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden hover:scale-95 transition-all duration-500 cursor-pointer;
+	}
+
+	.grid-card-img {
+		@apply w-full h-full bg-cover bg-center group-hover:scale-125 transition-all duration-500;
+	}
+}

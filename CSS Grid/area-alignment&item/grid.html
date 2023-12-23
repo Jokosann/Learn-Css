@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      width: 80%;
+      /* height: 400px; */
+      /* padding: 10px; */
+      margin: 50px auto;
+      border: 2px solid salmon;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+      grid-template-rows: repeat(3, 100px);
+      /* grid-auto-flow: row; */
+      /* grid-auto-rows: 10px; */
+      /* grid-auto-columns: 10px; */
+      /* justify-items: center; */
+      /* align-items: center; */
+      /* place-items: end center; */
+      /* justify-content: space-between; */
+      /* align-content: space-between; */
+      /* place-content: start space-evenly ; */
+      /* gap: 5px; */
+    }
+    .item {
+      background-color: lightblue;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      /* align-items: center;
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      grid-row-start: 1;
+      grid-row-end: span 2; */
+      /* grid-column-start: -1;
+      grid-column-end: -3;
+      grid-row-start: -3;
+      grid-row-end: -4; */
+    }
+    /* .satu,.empat,.tujuh {
+      width: 50px;
+      height: 70px;
+    }
+    .dua,.lima,.delapan {
+      width: 40px;
+      height: 50px;
+    }
+    .tiga,.enam,.sembilan {
+      width: 60px;
+      height: 70px;
+    } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item satu">1</div>
+    <div class="item dua">2</div>
+    <div class="item tiga">3</div>
+    <div class="item empat">4</div>
+    <div class="item lima">5</div>
+    <div class="item enam">6</div>
+    <div class="item tujuh">7</div>
+    <div class="item delapan">8</div>
+    <div class="item sembilan">9</div>
+    <!-- <div class="item sepuluh">10</div> -->
+  </div>
+</body>
+</html>
+<!-- property grid:
+        - for container -
+    - rows & colomns -
+- grid-tamplate-rows
+- grid-template-colomns
+- grid-auto-rows
+- grid-auto-colomns
+- grid-auto-flow
+    - area & gap -
+- grid-template-areas
+- grid-template (shorthand)
+- colomn-gap
+- row-gap
+- gap (shorthand ^)
+    - grid-alignment -
+- justify-items
+- align-items
+- place-items (shorthand ^)
+- justify-content
+- align-content
+- place-content (shorthan ^)
+
+        - for item -
+- grid-colomn-start/end (1)
+- grid-row-start/end (2)
+- grid-colomn (shorhand 1) 
+- grid-row (shorthand 2)
+- grid-areas (shorhand all ^)
+- justify-self
+- align-self
+- place-self(shorthand ^)
+-->

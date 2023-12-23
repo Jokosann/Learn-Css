@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector</title>
+  <style>
+    /* * {
+      padding: 0;
+      margin: 0;
+    } */
+    div ~ p {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <!-- div -->
+  <div>
+    <!-- p -->
+    <p>Paragraf 1</p>
+    <!-- span -->
+    <span>
+      <p>Lorem</p>
+    </span>
+    <!-- p -->
+    <p>Paragraf 2</p>
+  </div>
+  <!-- p -->
+  <p>Paragraf 3</p>
+  <!-- span -->
+  <span>Paragraf 4</span>
+  <!-- p -->
+  <p>lorem</p>
+  <p>lorem</p>
+  <!-- div -->
+  <div>
+    <!-- p -->
+    <p>Paragraf 5</p>
+    <!-- span -->
+    <span>
+      <p>Paragraf 6</p>
+      <p>Paragraf 7</p>
+    </span>
+    <!-- p -->
+    <p>Paragraf 8</p>
+  </div>
+  <!-- p -->
+  <p>Paragraf 9</p>
+  <section>p</section>
+  <p>Paragraf 10</p>
+  <!-- div -->
+  <div>
+    <!-- span -->
+    <span>
+      <p>Paragraf 11</p>
+      <p>Paragraf12</p>
+    </span>
+    <!-- p -->
+    <p>Paragraf 13</p>
+  </div>
+</body>
+</html>

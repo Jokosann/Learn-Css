@@ -1,0 +1,11 @@
+body {
+    color: red;
+}
+
+/* disini elemen (a) tidak mewarisi sytle body */
+
+a {
+    color: inherit;
+}
+
+/* maka elemen (a) mewarisi style body */

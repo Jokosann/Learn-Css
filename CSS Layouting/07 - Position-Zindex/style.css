@@ -1,0 +1,69 @@
+body {
+    height: 1000px;
+}
+.satu, .dua, .tiga {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    position: absolute;
+}
+.container {
+    width: 450px;
+    height: 450px;
+    margin: 50px auto;
+    border: 3px solid black;
+    position: relative;
+}
+
+.satu {
+    background-color: green;
+}
+
+.dua {
+    background-color: red; 
+    top: 75px;
+    left: 75px;
+
+}
+
+.tiga {
+    background-color: yellow;
+    top: 150px;
+    left: 150px;
+}
+.nav {
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    background-color: darkblue;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.iklan {
+    background-color: black;
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+    left: 150px;
+    right: 150px;
+    z-index: 99;
+    opacity: 0.6;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    background-color: #eaeaea;
+    font-family: arial;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    border-radius: 50%;
+
+}

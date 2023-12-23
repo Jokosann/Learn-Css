@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .container {
+        width: 550px;
+        /* height: 150px; */
+        border: 3px solid black;
+        display: flex;
+        padding: 5px;
+        margin: 50px auto;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        align-items: center;
+        /* align-content: center;  */
+      }
+      .container div {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        margin: 5px;
+        text-align: center;
+        /* line-height: 100px; */
+        /* font-size: 30px; */
+        /* flex: 1; */
+      }
+      .container div.dua {
+        /* flex: 4; */
+        /* align-self: flex-end; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-box</h1>
+    <div class="container">
+      <div class="satu">1</div>
+      <div class="dua">2</div>
+      <div class="tiga">3</div>
+      <div class="empat">4</div>
+      <!-- <div class="lima">5</div> -->
+      <!-- <div class="enam">6</div> -->
+      <!-- <div class="tujuh">7</div> -->
+      <!-- <div class="delapan">8</div> -->
+      <!-- <div class="sembilan">9</div> -->
+      <!-- <div class="sepuluh">10</div> -->
+    </div>
+  </body>
+</html>

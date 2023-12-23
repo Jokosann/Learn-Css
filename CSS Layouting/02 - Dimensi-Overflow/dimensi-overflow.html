@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensi dan Overflow</title>
+    <style>
+        .container{
+            width: 50%;
+            height: 200px;
+            background-color: red;
+        }
+/* dimensi ada 2 yaitu: width, height dengan value: px, %, in, cm, mm ,pt, pc */
+        .satu{
+            width: 300px;
+            height: 200px;
+            background-color: lightgreen;
+        }
+        .dua{
+            width: 120%;
+            background-color: blue;
+        }
+/* jika elemen child lebih besar dari parentnya */
+        .tiga{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            overflow: auto;
+        }
+/* overflow memiliki value: visible(bawaan), auto, hidden(menyembynyikan konte), scroll */
+
+    </style>
+</head>
+<body>
+    <div class="container">hello world</div>
+    <br>
+    <div class="satu">
+        <div class="dua">hello world</div>
+    </div>
+    <br>
+    <div class="tiga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore expedita, consequatur quidem, quos molestias ipsa a ipsum ipsam accusamus quaerat qui. Natus fugit atque eius a itaque rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis distinctio asperiores dicta dolore, iste dolor ea pariatur, molestias totam accusamus excepturi doloribus repudiandae itaque est obcaecati fugiat earum quam!</div>
+</body>
+</html>

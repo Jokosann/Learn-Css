@@ -1,0 +1,34 @@
+WS<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gradients</title>
+		<style>
+			.box {
+				width: 100%;
+				display: flex;
+			}
+			.satu {
+				width: 400px;
+				height: 150px;
+				margin: 50px auto;
+				/* (sudut(deg)/arah, warna awal, warna akhir) */
+				background: linear-gradient(to top right, red 40%, blue);
+			}
+			.dua {
+				width: 400px;
+				height: 150px;
+				margin: 50px auto;
+				background: radial-gradient(circle, red, blue);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="satu"></div>
+			<div class="dua"></div>
+		</div>
+	</body>
+</html>
